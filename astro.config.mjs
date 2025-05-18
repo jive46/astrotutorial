@@ -7,5 +7,7 @@ import preact from "@astrojs/preact";
 export default defineConfig({
   site: "https://amazing-fudge-4027bd.netlify.app/",
   integrations: [preact()],
-  prefetch: true,
+  prefetch: {
+    prefetchAll: true
+  },
 });
